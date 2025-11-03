@@ -16,7 +16,6 @@ function charValue(c) {
   } else if (c === c.toLowerCase()) {
     value = c.charCodeAt(0) - 96;
   }
-  console.log(c, '=', value);
   return value;
 }
 
