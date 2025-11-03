@@ -4,21 +4,23 @@ Este repositório serve como um arquivo pessoal das minhas soluções para os de
 
 ## 🎯 Estrutura do Projeto
 
-Cada desafio é organizado em uma pasta separada, nomeada com a data em que foi resolvido, seguindo o formato `AAAA-MM-DD`.
+Cada desafio é organizado em uma estrutura de pastas que representa a data em que foi resolvido, seguindo o formato `AAAA/MM/DD`.
 
-Dentro de cada pasta, você encontrará:
+Dentro da pasta de cada dia, você encontrará:
 
 - `script.js`: O arquivo contendo a implementação da solução para o desafio.
 - `script.test.js`: O arquivo de testes unitários para validar a corretude da solução.
 
 ```
 /
-├── 2025-10-29/
-│   ├── script.js
-│   └── script.test.js
-├── 2025-10-30/
-│   ├── script.js
-│   └── script.test.js
+├── 2025/
+│   ├── 10/
+│   │   ├── 01/
+│   │   │   ├── script.js
+│   │   │   └── script.test.js
+│   │   ├── 02/
+│   │   │   ├── script.js
+│   │   │   └── script.test.js
 └── ...
 ```
 
