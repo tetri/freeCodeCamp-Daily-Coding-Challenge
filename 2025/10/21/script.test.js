@@ -7,21 +7,21 @@ const adjustThermostat = require("./script");
 //5. adjustThermostat(59, 22) should return "Heat: 12.6 degrees Fahrenheit".
 
 test("adjustThermostat 1", () => {
-  expect(adjustThermostat(32, 0)).toEqual("Hold");
+  expect(adjustThermostat(32, 0)).toBe("Hold");
 });
 
 test("adjustThermostat 2", () => {
-  expect(adjustThermostat(70, 25)).toEqual("Heat: 7.0 degrees Fahrenheit");
+  expect(adjustThermostat(70, 25)).toBe("Heat: 7.0 degrees Fahrenheit");
 });
 
 test("adjustThermostat 3", () => {
-  expect(adjustThermostat(72, 18)).toEqual("Cool: 7.6 degrees Fahrenheit");
+  expect(adjustThermostat(72, 18)).toBe("Cool: 7.6 degrees Fahrenheit");
 });
 
 test("adjustThermostat 4", () => {
-  expect(adjustThermostat(212, 100)).toEqual("Hold");
+  expect(adjustThermostat(212, 100)).toBe("Hold");
 });
 
 test("adjustThermostat 5", () => {
-  expect(adjustThermostat(59, 22)).toEqual("Heat: 12.6 degrees Fahrenheit");
+  expect(adjustThermostat(59, 22)).toBe("Heat: 12.6 degrees Fahrenheit");
 });

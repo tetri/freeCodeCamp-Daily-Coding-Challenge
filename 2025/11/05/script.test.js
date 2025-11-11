@@ -6,20 +6,20 @@ const buildMatrix = require("./script");
 //4. buildMatrix(9, 1) should return [[0], [0], [0], [0], [0], [0], [0], [0], [0]].
 
 test("buildMatrix 1", () =>
-  expect(buildMatrix(2, 3)).toEqual([
+  expect(buildMatrix(2, 3)).toBe([
     [0, 0, 0],
     [0, 0, 0],
   ]));
 
 test("buildMatrix 2", () =>
-  expect(buildMatrix(3, 2)).toEqual([
+  expect(buildMatrix(3, 2)).toBe([
     [0, 0],
     [0, 0],
     [0, 0],
   ]));
 
 test("buildMatrix 3", () =>
-  expect(buildMatrix(4, 3)).toEqual([
+  expect(buildMatrix(4, 3)).toBe([
     [0, 0, 0],
     [0, 0, 0],
     [0, 0, 0],
@@ -27,7 +27,7 @@ test("buildMatrix 3", () =>
   ]));
 
 test("buildMatrix 4", () =>
-  expect(buildMatrix(9, 1)).toEqual([
+  expect(buildMatrix(9, 1)).toBe([
     [0],
     [0],
     [0],

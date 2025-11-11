@@ -11,7 +11,7 @@ test("favoriteSongs 1", () => {
       { title: "Byte Me", plays: 1 },
       { title: "Earbud Blues", plays: 2 },
     ])
-  ).toEqual(["Sync or Swim", "Earbud Blues"]);
+  ).toBe(["Sync or Swim", "Earbud Blues"]);
 });
 
 test("favoriteSongs 2", () => {
@@ -21,7 +21,7 @@ test("favoriteSongs 2", () => {
       { title: "99 Downloads", plays: 99 },
       { title: "Clickwheel Love", plays: 100 },
     ])
-  ).toEqual(["Clickwheel Love", "99 Downloads"]);
+  ).toBe(["Clickwheel Love", "99 Downloads"]);
 });
 
 test("favoriteSongs 3", () => {
@@ -31,5 +31,5 @@ test("favoriteSongs 3", () => {
       { title: "Song B", plays: 99 },
       { title: "Song C", plays: 75 },
     ])
-  ).toEqual(["Song B", "Song C"]);
+  ).toBe(["Song B", "Song C"]);
 });

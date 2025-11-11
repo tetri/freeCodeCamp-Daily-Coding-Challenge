@@ -9,29 +9,47 @@ const navigate = require("./script");
 //7. navigate(["Visit About Us", "Visit Visit Us", "Forward", "Visit Contact Us", "Back"]) should return "Visit Us".
 
 test("navigate 1", () => {
-  expect(navigate(["Visit About Us", "Back", "Forward"])).toEqual("About Us");
+  expect(navigate(["Visit About Us", "Back", "Forward"])).toBe("About Us");
 });
 
 test("navigate 2", () => {
-  expect(navigate(["Forward"])).toEqual("Home");
+  expect(navigate(["Forward"])).toBe("Home");
 });
 
 test("navigate 3", () => {
-  expect(navigate(["Back"])).toEqual("Home");
+  expect(navigate(["Back"])).toBe("Home");
 });
 
 test("navigate 4", () => {
-  expect(navigate(["Visit About Us", "Visit Gallery"])).toEqual("Gallery");
+  expect(navigate(["Visit About Us", "Visit Gallery"])).toBe("Gallery");
 });
 
 test("navigate 5", () => {
-    expect(navigate(["Visit About Us", "Visit Gallery", "Back", "Back"])).toEqual("Home");
+  expect(navigate(["Visit About Us", "Visit Gallery", "Back", "Back"])).toBe(
+    "Home"
+  );
 });
 
 test("navigate 6", () => {
-    expect(navigate(["Visit About", "Visit Gallery", "Back", "Visit Contact", "Forward"])).toEqual("Contact");
+  expect(
+    navigate([
+      "Visit About",
+      "Visit Gallery",
+      "Back",
+      "Visit Contact",
+      "Forward",
+    ])
+  ).toBe("Contact");
 });
 
 test("navigate 7", () => {
-    expect(navigate(["Visit About Us", "Visit Visit Us", "Forward", "Visit Contact Us", "Back"])).toEqual("Visit Us");
+  expect(
+    navigate([
+      "Visit About Us",
+      "Visit Visit Us",
+      "Forward",
+      "Visit Contact Us",
+      "Back",
+    ])
+  ).toBe("Visit Us");
 });

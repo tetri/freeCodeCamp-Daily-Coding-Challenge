@@ -6,17 +6,17 @@ const complementaryDNA = require("./script");
 //4. complementaryDNA("GATCTAGCTAGGCTAGCTAG") should return "CTAGATCGATCCGATCGATC".
 
 test("complementaryDNA 1", () => {
-  expect(complementaryDNA("ACGT")).toEqual("TGCA");
+  expect(complementaryDNA("ACGT")).toBe("TGCA");
 });
 
 test("complementaryDNA 2", () => {
-  expect(complementaryDNA("ATGCGTACGTTAGC")).toEqual("TACGCATGCAATCG");
+  expect(complementaryDNA("ATGCGTACGTTAGC")).toBe("TACGCATGCAATCG");
 });
 
 test("complementaryDNA 3", () => {
-  expect(complementaryDNA("GGCTTACGATCGAAG")).toEqual("CCGAATGCTAGCTTC");
+  expect(complementaryDNA("GGCTTACGATCGAAG")).toBe("CCGAATGCTAGCTTC");
 });
 
 test("complementaryDNA 4", () => {
-  expect(complementaryDNA("GATCTAGCTAGGCTAGCTAG")).toEqual("CTAGATCGATCCGATCGATC");
+  expect(complementaryDNA("GATCTAGCTAGGCTAGCTAG")).toBe("CTAGATCGATCCGATCGATC");
 });

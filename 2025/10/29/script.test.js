@@ -7,13 +7,15 @@ const sort = require("./script");
 //5. sort(["simon@beta.com", "sammy@alpha.com", "Sarah@Alpha.com", "SAM@ALPHA.com", "Simone@Beta.com", "sara@alpha.com"]) should return ["SAM@ALPHA.com", "sammy@alpha.com", "sara@alpha.com", "Sarah@Alpha.com", "simon@beta.com", "Simone@Beta.com"].
 
 test("sort 1", () => {
-  expect(
-    sort(["jill@mail.com", "john@example.com", "jane@example.com"])
-  ).toEqual(["jane@example.com", "john@example.com", "jill@mail.com"]);
+  expect(sort(["jill@mail.com", "john@example.com", "jane@example.com"])).toBe([
+    "jane@example.com",
+    "john@example.com",
+    "jill@mail.com",
+  ]);
 });
 
 test("sort 2", () => {
-  expect(sort(["bob@mail.com", "alice@zoo.com", "carol@mail.com"])).toEqual([
+  expect(sort(["bob@mail.com", "alice@zoo.com", "carol@mail.com"])).toBe([
     "bob@mail.com",
     "carol@mail.com",
     "alice@zoo.com",
@@ -21,7 +23,7 @@ test("sort 2", () => {
 });
 
 test("sort 3", () => {
-  expect(sort(["user@z.com", "user@y.com", "user@x.com"])).toEqual([
+  expect(sort(["user@z.com", "user@y.com", "user@x.com"])).toBe([
     "user@x.com",
     "user@y.com",
     "user@z.com",
@@ -29,7 +31,7 @@ test("sort 3", () => {
 });
 
 test("sort 4", () => {
-  expect(sort(["sam@MAIL.com", "amy@mail.COM", "bob@Mail.com"])).toEqual([
+  expect(sort(["sam@MAIL.com", "amy@mail.COM", "bob@Mail.com"])).toBe([
     "amy@mail.COM",
     "bob@Mail.com",
     "sam@MAIL.com",
@@ -46,7 +48,7 @@ test("sort 5", () => {
       "Simone@Beta.com",
       "sara@alpha.com",
     ])
-  ).toEqual([
+  ).toBe([
     "SAM@ALPHA.com",
     "sammy@alpha.com",
     "sara@alpha.com",

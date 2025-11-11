@@ -7,21 +7,21 @@ const format = require("./script");
 //5. format(99999) should return "27:46:39".
 
 test("format 1", () => {
-  expect(format(500)).toEqual("8:20");
+  expect(format(500)).toBe("8:20");
 });
 
 test("format 1", () => {
-  expect(format(4000)).toEqual("1:06:40");
+  expect(format(4000)).toBe("1:06:40");
 });
 
 test("format 1", () => {
-  expect(format(1)).toEqual("0:01");
+  expect(format(1)).toBe("0:01");
 });
 
 test("format 1", () => {
-  expect(format(5555)).toEqual("1:32:35");
+  expect(format(5555)).toBe("1:32:35");
 });
 
 test("format 1", () => {
-  expect(format(99999)).toEqual("27:46:39");
+  expect(format(99999)).toBe("27:46:39");
 });
