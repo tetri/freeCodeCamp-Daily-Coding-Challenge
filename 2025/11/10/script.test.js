@@ -7,10 +7,15 @@ const getExtension = require("./script");
 //5. getExtension("archive.tar.gz") should return "gz".
 //6. getExtension("final.draft.") should return "none".
 
-test("getExtension 1", () => expect(getExtension("document.txt")).toBe("txt"));
-test("getExtension 2", () => expect(getExtension("README")).toBe("none"));
-test("getExtension 3", () => expect(getExtension("image.PNG")).toBe("PNG"));
+test("getExtension 1", () =>
+  expect(getExtension("document.txt")).toStrictEqual("txt"));
+test("getExtension 2", () =>
+  expect(getExtension("README")).toStrictEqual("none"));
+test("getExtension 3", () =>
+  expect(getExtension("image.PNG")).toStrictEqual("PNG"));
 test("getExtension 4", () =>
-  expect(getExtension(".gitignore")).toBe("gitignore"));
-test("getExtension 5", () => expect(getExtension("archive.tar.gz")).toBe("gz"));
-test("getExtension 6", () => expect(getExtension("final.draft.")).toBe("none"));
+  expect(getExtension(".gitignore")).toStrictEqual("gitignore"));
+test("getExtension 5", () =>
+  expect(getExtension("archive.tar.gz")).toStrictEqual("gz"));
+test("getExtension 6", () =>
+  expect(getExtension("final.draft.")).toStrictEqual("none"));

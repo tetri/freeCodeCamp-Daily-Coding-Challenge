@@ -6,17 +6,17 @@ const stripTags = require("./script.js");
 //4. stripTags('<main id="main"><section class="section">section</section><section class="section">section</section></main>') should return sectionsection.
 
 test("stripTags 1", () => {
-  expect(stripTags('<a href="#">Click here</a>')).toBe("Click here");
+  expect(stripTags('<a href="#">Click here</a>')).toStrictEqual("Click here");
 });
 
 test("stripTags 2", () => {
-  expect(stripTags('<p class="center">Hello <b>World</b>!</p>')).toBe(
+  expect(stripTags('<p class="center">Hello <b>World</b>!</p>')).toStrictEqual(
     "Hello World!"
   );
 });
 
 test("stripTags 3", () => {
-  expect(stripTags('<img src="cat.jpg" alt="Cat">')).toBe("");
+  expect(stripTags('<img src="cat.jpg" alt="Cat">')).toStrictEqual("");
 });
 
 test("stripTags 4", () => {
@@ -24,5 +24,5 @@ test("stripTags 4", () => {
     stripTags(
       '<main id="main"><section class="section">section</section><section class="section">section</section></main>'
     )
-  ).toBe("sectionsection");
+  ).toStrictEqual("sectionsection");
 });

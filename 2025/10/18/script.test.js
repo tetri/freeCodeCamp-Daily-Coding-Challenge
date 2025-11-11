@@ -7,21 +7,21 @@ const sockPairs = require("./script");
 //5. sockPairs(1, 8) should return 0.
 
 test("sockPairs 1", () => {
-  expect(sockPairs(2, 5)).toBe(1);
+  expect(sockPairs(2, 5)).toStrictEqual(1);
 });
 
 test("sockPairs 2", () => {
-  expect(sockPairs(1, 2)).toBe(0);
+  expect(sockPairs(1, 2)).toStrictEqual(0);
 });
 
 test("sockPairs 3", () => {
-  expect(sockPairs(5, 11)).toBe(4);
+  expect(sockPairs(5, 11)).toStrictEqual(4);
 });
 
 test("sockPairs 4", () => {
-  expect(sockPairs(6, 25)).toBe(3);
+  expect(sockPairs(6, 25)).toStrictEqual(3);
 });
 
 test("sockPairs 5", () => {
-  expect(sockPairs(1, 8)).toBe(0);
+  expect(sockPairs(1, 8)).toStrictEqual(0);
 });

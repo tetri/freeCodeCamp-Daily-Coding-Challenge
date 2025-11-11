@@ -9,31 +9,33 @@ const battle = require("./script");
 //7. battle("We must never surrender", "Our team must win") should return "Draw".
 
 test("battle 1", () => {
-  expect(battle("hello world", "hello word")).toBe("We win");
+  expect(battle("hello world", "hello word")).toStrictEqual("We win");
 });
 
 test("battle 2", () => {
-  expect(battle("Hello world", "hello world")).toBe("We win");
+  expect(battle("Hello world", "hello world")).toStrictEqual("We win");
 });
 
 test("battle 3", () => {
-  expect(battle("lorem ipsum", "kitty ipsum")).toBe("We lose");
+  expect(battle("lorem ipsum", "kitty ipsum")).toStrictEqual("We lose");
 });
 
 test("battle 4", () => {
-  expect(battle("hello world", "world hello")).toBe("Draw");
+  expect(battle("hello world", "world hello")).toStrictEqual("Draw");
 });
 
 test("battle 5", () => {
-  expect(battle("git checkout", "git switch")).toBe("We win");
+  expect(battle("git checkout", "git switch")).toStrictEqual("We win");
 });
 
 test("battle 6", () => {
-  expect(battle("Cheeseburger with fries", "Cheeseburger with Fries")).toBe(
-    "We lose"
-  );
+  expect(
+    battle("Cheeseburger with fries", "Cheeseburger with Fries")
+  ).toStrictEqual("We lose");
 });
 
 test("battle 7", () => {
-  expect(battle("We must never surrender", "Our team must win")).toBe("Draw");
+  expect(battle("We must never surrender", "Our team must win")).toStrictEqual(
+    "Draw"
+  );
 });

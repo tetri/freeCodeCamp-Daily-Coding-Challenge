@@ -7,21 +7,21 @@ const infected = require("./script");
 //5. infected(25) should return 5217638.
 
 test("infected 1", () => {
-  expect(infected(1)).toBe(2);
+  expect(infected(1)).toStrictEqual(2);
 });
 
 test("infected 2", () => {
-  expect(infected(3)).toBe(6);
+  expect(infected(3)).toStrictEqual(6);
 });
 
 test("infected 3", () => {
-  expect(infected(8)).toBe(152);
+  expect(infected(8)).toStrictEqual(152);
 });
 
 test("infected 4", () => {
-  expect(infected(17)).toBe(39808);
+  expect(infected(17)).toStrictEqual(39808);
 });
 
 test("infected 5", () => {
-  expect(infected(25)).toBe(5217638);
+  expect(infected(25)).toStrictEqual(5217638);
 });

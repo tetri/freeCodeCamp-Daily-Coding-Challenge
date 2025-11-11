@@ -10,31 +10,31 @@ const isPangram = require("./script");
 //8. isPangram("The quick brown fox jumps over the lazy dog.", "abcdefghijklmnopqrstuvwxyz") should return true
 
 test("isPangram 1", () => {
-  expect(isPangram("hello", "helo")).toBe(true);
+  expect(isPangram("hello", "helo")).toStrictEqual(true);
 });
 
 test("isPangram 2", () => {
-  expect(isPangram("hello", "hel")).toBe(false);
+  expect(isPangram("hello", "hel")).toStrictEqual(false);
 });
 
 test("isPangram 3", () => {
-  expect(isPangram("hello", "helow")).toBe(false);
+  expect(isPangram("hello", "helow")).toStrictEqual(false);
 });
 
 test("isPangram 4", () => {
-  expect(isPangram("hello world", "helowrd")).toBe(true);
+  expect(isPangram("hello world", "helowrd")).toStrictEqual(true);
 });
 
 test("isPangram 5", () => {
-  expect(isPangram("Hello World!", "helowrd")).toBe(true);
+  expect(isPangram("Hello World!", "helowrd")).toStrictEqual(true);
 });
 
 test("isPangram 6", () => {
-  expect(isPangram("Hello World!", "heliowrd")).toBe(false);
+  expect(isPangram("Hello World!", "heliowrd")).toStrictEqual(false);
 });
 
 test("isPangram 7", () => {
-  expect(isPangram("freeCodeCamp", "frcdmp")).toBe(false);
+  expect(isPangram("freeCodeCamp", "frcdmp")).toStrictEqual(false);
 });
 
 test("isPangram 8", () => {
@@ -43,5 +43,5 @@ test("isPangram 8", () => {
       "The quick brown fox jumps over the lazy dog.",
       "abcdefghijklmnopqrstuvwxyz"
     )
-  ).toBe(true);
+  ).toStrictEqual(true);
 });

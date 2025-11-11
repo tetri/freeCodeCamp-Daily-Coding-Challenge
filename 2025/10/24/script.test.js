@@ -17,7 +17,7 @@ test("dive 1", () => {
       ],
       [2, 1]
     )
-  ).toBe("Recovered");
+  ).toStrictEqual("Recovered");
 });
 
 test("dive 2", () => {
@@ -30,7 +30,7 @@ test("dive 2", () => {
       ],
       [2, 0]
     )
-  ).toBe("Empty");
+  ).toStrictEqual("Empty");
 });
 
 test("dive 3", () => {
@@ -43,7 +43,7 @@ test("dive 3", () => {
       ],
       [1, 1]
     )
-  ).toBe("Found");
+  ).toStrictEqual("Found");
 });
 
 test("dive 4", () => {
@@ -56,7 +56,7 @@ test("dive 4", () => {
       ],
       [1, 2]
     )
-  ).toBe("Found");
+  ).toStrictEqual("Found");
 });
 
 test("dive 5", () => {
@@ -69,7 +69,7 @@ test("dive 5", () => {
       ],
       [2, 0]
     )
-  ).toBe("Recovered");
+  ).toStrictEqual("Recovered");
 });
 
 test("dive 6", () => {
@@ -82,5 +82,5 @@ test("dive 6", () => {
       ],
       [1, 2]
     )
-  ).toBe("Empty");
+  ).toStrictEqual("Empty");
 });

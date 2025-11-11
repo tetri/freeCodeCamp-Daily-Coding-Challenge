@@ -9,29 +9,29 @@ const allUnique = require("./script");
 //7. allUnique("!@#*$%^&*()aA") should return false.
 
 test("allUnique 1", () => {
-  expect(allUnique("abc")).toBe(true);
+  expect(allUnique("abc")).toStrictEqual(true);
 });
 
 test("allUnique 2", () => {
-  expect(allUnique("aA")).toBe(true);
+  expect(allUnique("aA")).toStrictEqual(true);
 });
 
 test("allUnique 3", () => {
-  expect(allUnique("QwErTy123!@")).toBe(true);
+  expect(allUnique("QwErTy123!@")).toStrictEqual(true);
 });
 
 test("allUnique 4", () => {
-  expect(allUnique("~!@#$%^&*()_+")).toBe(true);
+  expect(allUnique("~!@#$%^&*()_+")).toStrictEqual(true);
 });
 
 test("allUnique 5", () => {
-  expect(allUnique("hello")).toBe(false);
+  expect(allUnique("hello")).toStrictEqual(false);
 });
 
 test("allUnique 6", () => {
-  expect(allUnique("freeCodeCamp")).toBe(false);
+  expect(allUnique("freeCodeCamp")).toStrictEqual(false);
 });
 
 test("allUnique 7", () => {
-  expect(allUnique("!@#*$%^&*()aA")).toBe(false);
+  expect(allUnique("!@#*$%^&*()aA")).toStrictEqual(false);
 });

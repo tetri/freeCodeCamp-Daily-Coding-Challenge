@@ -7,21 +7,21 @@ const arrayDiff = require("./script");
 //5. arrayDiff(["I", "like", "freeCodeCamp"], ["I", "like", "rocks"]) should return ["freeCodeCamp", "rocks"].
 
 test("arrayDiff 1", () => {
-  expect(arrayDiff(["apple", "banana"], ["apple", "banana", "cherry"])).toBe([
-    "cherry",
-  ]);
+  expect(
+    arrayDiff(["apple", "banana"], ["apple", "banana", "cherry"])
+  ).toStrictEqual(["cherry"]);
 });
 
 test("arrayDiff 2", () => {
-  expect(arrayDiff(["apple", "banana", "cherry"], ["apple", "banana"])).toBe([
-    "cherry",
-  ]);
+  expect(
+    arrayDiff(["apple", "banana", "cherry"], ["apple", "banana"])
+  ).toStrictEqual(["cherry"]);
 });
 
 test("arrayDiff 3", () => {
   expect(
     arrayDiff(["one", "two", "three", "four", "six"], ["one", "three", "eight"])
-  ).toBe(["eight", "four", "six", "two"]);
+  ).toStrictEqual(["eight", "four", "six", "two"]);
 });
 
 test("arrayDiff 4", () => {
@@ -30,11 +30,11 @@ test("arrayDiff 4", () => {
       ["two", "four", "five", "eight"],
       ["one", "two", "three", "four", "seven", "eight"]
     )
-  ).toBe(["five", "one", "seven", "three"]);
+  ).toStrictEqual(["five", "one", "seven", "three"]);
 });
 
 test("arrayDiff 5", () => {
-  expect(arrayDiff(["I", "like", "freeCodeCamp"], ["I", "like", "rocks"])).toBe(
-    ["freeCodeCamp", "rocks"]
-  );
+  expect(
+    arrayDiff(["I", "like", "freeCodeCamp"], ["I", "like", "rocks"])
+  ).toStrictEqual(["freeCodeCamp", "rocks"]);
 });

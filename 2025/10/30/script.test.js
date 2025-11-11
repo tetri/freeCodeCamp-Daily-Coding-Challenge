@@ -7,21 +7,21 @@ const nthPrime = require("./script");
 //5. nthPrime(1000) should return 7919.
 
 test("nthPrime 1", () => {
-  expect(nthPrime(5)).toBe(11);
+  expect(nthPrime(5)).toStrictEqual(11);
 });
 
 test("nthPrime 2", () => {
-  expect(nthPrime(10)).toBe(29);
+  expect(nthPrime(10)).toStrictEqual(29);
 });
 
 test("nthPrime 3", () => {
-  expect(nthPrime(16)).toBe(53);
+  expect(nthPrime(16)).toStrictEqual(53);
 });
 
 test("nthPrime 4", () => {
-  expect(nthPrime(99)).toBe(523);
+  expect(nthPrime(99)).toStrictEqual(523);
 });
 
 test("nthPrime 5", () => {
-  expect(nthPrime(1000)).toBe(7919);
+  expect(nthPrime(1000)).toStrictEqual(7919);
 });

@@ -7,21 +7,21 @@ const to12 = require("./script");
 //5. to12("0030") should return "12:30 AM".
 
 test("to12 1", () => {
-  expect(to12("1124")).toBe("11:24 AM");
+  expect(to12("1124")).toStrictEqual("11:24 AM");
 });
 
 test("to12 2", () => {
-  expect(to12("0900")).toBe("9:00 AM");
+  expect(to12("0900")).toStrictEqual("9:00 AM");
 });
 
 test("to12 3", () => {
-  expect(to12("1455")).toBe("2:55 PM");
+  expect(to12("1455")).toStrictEqual("2:55 PM");
 });
 
 test("to12 4", () => {
-  expect(to12("2346")).toBe("11:46 PM");
+  expect(to12("2346")).toStrictEqual("11:46 PM");
 });
 
 test("to12 5", () => {
-  expect(to12("0030")).toBe("12:30 AM");
+  expect(to12("0030")).toStrictEqual("12:30 AM");
 });

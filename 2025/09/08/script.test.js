@@ -9,29 +9,29 @@ const buildAcronym = require("./script");
 //7. buildAcronym("An unstoppable herd of waddling penguins overtakes the icy mountains and sings happily") should return "AUHWPOTIMSH".
 
 test("buildAcronym 1", () => {
-  expect(buildAcronym("Search Engine Optimization")).toBe("SEO");
+  expect(buildAcronym("Search Engine Optimization")).toStrictEqual("SEO");
 });
 
 test("buildAcronym 2", () => {
-  expect(buildAcronym("Frequently Asked Questions")).toBe("FAQ");
+  expect(buildAcronym("Frequently Asked Questions")).toStrictEqual("FAQ");
 });
 
 test("buildAcronym 3", () => {
-  expect(buildAcronym("National Aeronautics and Space Administration")).toBe(
-    "NASA"
-  );
+  expect(
+    buildAcronym("National Aeronautics and Space Administration")
+  ).toStrictEqual("NASA");
 });
 
 test("buildAcronym 4", () => {
-  expect(buildAcronym("Federal Bureau of Investigation")).toBe("FBI");
+  expect(buildAcronym("Federal Bureau of Investigation")).toStrictEqual("FBI");
 });
 
 test("buildAcronym 5", () => {
-  expect(buildAcronym("For your information")).toBe("FYI");
+  expect(buildAcronym("For your information")).toStrictEqual("FYI");
 });
 
 test("buildAcronym 6", () => {
-  expect(buildAcronym("By the way")).toBe("BTW");
+  expect(buildAcronym("By the way")).toStrictEqual("BTW");
 });
 
 test("buildAcronym 7", () => {
@@ -39,5 +39,5 @@ test("buildAcronym 7", () => {
     buildAcronym(
       "An unstoppable herd of waddling penguins overtakes the icy mountains and sings happily"
     )
-  ).toBe("AUHWPOTIMSH");
+  ).toStrictEqual("AUHWPOTIMSH");
 });

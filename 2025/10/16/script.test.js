@@ -11,37 +11,37 @@ const validate = require("./script.js");
 //9. validate("git@commit@push.io") should return false.
 
 test("validate 1", () => {
-  expect(validate("a@b.cd")).toBe(true);
+  expect(validate("a@b.cd")).toStrictEqual(true);
 });
 
 test("validate 2", () => {
-  expect(validate("hell.-w.rld@example.com")).toBe(true);
+  expect(validate("hell.-w.rld@example.com")).toStrictEqual(true);
 });
 
 test("validate 3", () => {
-  expect(validate(".b@sh.rc")).toBe(false);
+  expect(validate(".b@sh.rc")).toStrictEqual(false);
 });
 
 test("validate 4", () => {
-  expect(validate("example@test.c0")).toBe(false);
+  expect(validate("example@test.c0")).toStrictEqual(false);
 });
 
 test("validate 5", () => {
-  expect(validate("freecodecamp.org")).toBe(false);
+  expect(validate("freecodecamp.org")).toStrictEqual(false);
 });
 
 test("validate 6", () => {
-  expect(validate("develop.ment_user@c0D!NG.R.CKS")).toBe(true);
+  expect(validate("develop.ment_user@c0D!NG.R.CKS")).toStrictEqual(true);
 });
 
 test("validate 7", () => {
-  expect(validate("hello.@wo.rld")).toBe(false);
+  expect(validate("hello.@wo.rld")).toStrictEqual(false);
 });
 
 test("validate 8", () => {
-  expect(validate("hello@world..com")).toBe(false);
+  expect(validate("hello@world..com")).toStrictEqual(false);
 });
 
 test("validate 9", () => {
-  expect(validate("git@commit@push.io")).toBe(false);
+  expect(validate("git@commit@push.io")).toStrictEqual(false);
 });

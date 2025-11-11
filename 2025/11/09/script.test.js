@@ -15,7 +15,7 @@ test("findWord 1", () =>
       ],
       "cat"
     )
-  ).toBe([
+  ).toStrictEqual([
     [0, 1],
     [2, 1],
   ]));
@@ -29,7 +29,7 @@ test("findWord 2", () =>
       ],
       "dog"
     )
-  ).toBe([
+  ).toStrictEqual([
     [0, 0],
     [0, 2],
   ]));
@@ -44,7 +44,7 @@ test("findWord 3", () =>
       ],
       "fish"
     )
-  ).toBe([
+  ).toStrictEqual([
     [3, 3],
     [0, 3],
   ]));
@@ -59,7 +59,7 @@ test("findWord 4", () =>
       ],
       "fox"
     )
-  ).toBe([
+  ).toStrictEqual([
     [1, 3],
     [1, 1],
   ]));

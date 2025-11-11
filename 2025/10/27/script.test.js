@@ -6,17 +6,19 @@ const sequence = require("./script");
 //4. sequence(27) should return "123456789101112131415161718192021222324252627".
 
 test("sequence 1", () => {
-  expect(sequence(5)).toBe("12345");
+  expect(sequence(5)).toStrictEqual("12345");
 });
 
 test("sequence 2", () => {
-  expect(sequence(10)).toBe("12345678910");
+  expect(sequence(10)).toStrictEqual("12345678910");
 });
 
 test("sequence 3", () => {
-  expect(sequence(1)).toBe("1");
+  expect(sequence(1)).toStrictEqual("1");
 });
 
 test("sequence 4", () => {
-  expect(sequence(27)).toBe("123456789101112131415161718192021222324252627");
+  expect(sequence(27)).toStrictEqual(
+    "123456789101112131415161718192021222324252627"
+  );
 });

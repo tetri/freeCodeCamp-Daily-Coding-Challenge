@@ -9,25 +9,29 @@ const navigate = require("./script");
 //7. navigate(["Visit About Us", "Visit Visit Us", "Forward", "Visit Contact Us", "Back"]) should return "Visit Us".
 
 test("navigate 1", () => {
-  expect(navigate(["Visit About Us", "Back", "Forward"])).toBe("About Us");
+  expect(navigate(["Visit About Us", "Back", "Forward"])).toStrictEqual(
+    "About Us"
+  );
 });
 
 test("navigate 2", () => {
-  expect(navigate(["Forward"])).toBe("Home");
+  expect(navigate(["Forward"])).toStrictEqual("Home");
 });
 
 test("navigate 3", () => {
-  expect(navigate(["Back"])).toBe("Home");
+  expect(navigate(["Back"])).toStrictEqual("Home");
 });
 
 test("navigate 4", () => {
-  expect(navigate(["Visit About Us", "Visit Gallery"])).toBe("Gallery");
+  expect(navigate(["Visit About Us", "Visit Gallery"])).toStrictEqual(
+    "Gallery"
+  );
 });
 
 test("navigate 5", () => {
-  expect(navigate(["Visit About Us", "Visit Gallery", "Back", "Back"])).toBe(
-    "Home"
-  );
+  expect(
+    navigate(["Visit About Us", "Visit Gallery", "Back", "Back"])
+  ).toStrictEqual("Home");
 });
 
 test("navigate 6", () => {
@@ -39,7 +43,7 @@ test("navigate 6", () => {
       "Visit Contact",
       "Forward",
     ])
-  ).toBe("Contact");
+  ).toStrictEqual("Contact");
 });
 
 test("navigate 7", () => {
@@ -51,5 +55,5 @@ test("navigate 7", () => {
       "Visit Contact Us",
       "Back",
     ])
-  ).toBe("Visit Us");
+  ).toStrictEqual("Visit Us");
 });

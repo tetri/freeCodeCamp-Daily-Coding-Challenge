@@ -7,23 +7,27 @@ const extractAttributes = require("./script");
 //5. extractAttributes('<button id="submit" class="btn btn-primary">Submit</button>') should return ["id, submit", "class, btn btn-primary"].
 
 test("extractAttributes 1", () => {
-  expect(extractAttributes('<span class="red"></span>')).toBe(["class, red"]);
+  expect(extractAttributes('<span class="red"></span>')).toStrictEqual([
+    "class, red",
+  ]);
 });
 
 test("extractAttributes 2", () => {
-  expect(extractAttributes('<meta charset="UTF-8" />')).toBe([
+  expect(extractAttributes('<meta charset="UTF-8" />')).toStrictEqual([
     "charset, UTF-8",
   ]);
 });
 
 test("extractAttributes 3", () => {
-  expect(extractAttributes("<p>Lorem ipsum dolor sit amet</p>")).toBe([]);
+  expect(extractAttributes("<p>Lorem ipsum dolor sit amet</p>")).toStrictEqual(
+    []
+  );
 });
 
 test("extractAttributes 4", () => {
   expect(
     extractAttributes('<input name="email" type="email" required="true" />')
-  ).toBe(["name, email", "type, email", "required, true"]);
+  ).toStrictEqual(["name, email", "type, email", "required, true"]);
 });
 
 test("extractAttributes 5", () => {
@@ -31,5 +35,5 @@ test("extractAttributes 5", () => {
     extractAttributes(
       '<button id="submit" class="btn btn-primary">Submit</button>'
     )
-  ).toBe(["id, submit", "class, btn btn-primary"]);
+  ).toStrictEqual(["id, submit", "class, btn btn-primary"]);
 });

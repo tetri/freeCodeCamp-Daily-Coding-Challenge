@@ -9,29 +9,29 @@ const parseRomanNumeral = require("./script");
 //7. parseRomanNumeral("MMXXV") should return 2025.
 
 test("parseRomanNumeral 1", () => {
-  expect(parseRomanNumeral("III")).toBe(3);
+  expect(parseRomanNumeral("III")).toStrictEqual(3);
 });
 
 test("parseRomanNumeral 2", () => {
-  expect(parseRomanNumeral("IV")).toBe(4);
+  expect(parseRomanNumeral("IV")).toStrictEqual(4);
 });
 
 test("parseRomanNumeral 3", () => {
-  expect(parseRomanNumeral("XXVI")).toBe(26);
+  expect(parseRomanNumeral("XXVI")).toStrictEqual(26);
 });
 
 test("parseRomanNumeral 4", () => {
-  expect(parseRomanNumeral("XCIX")).toBe(99);
+  expect(parseRomanNumeral("XCIX")).toStrictEqual(99);
 });
 
 test("parseRomanNumeral 5", () => {
-  expect(parseRomanNumeral("CDLX")).toBe(460);
+  expect(parseRomanNumeral("CDLX")).toStrictEqual(460);
 });
 
 test("parseRomanNumeral 6", () => {
-  expect(parseRomanNumeral("DIV")).toBe(504);
+  expect(parseRomanNumeral("DIV")).toStrictEqual(504);
 });
 
 test("parseRomanNumeral 7", () => {
-  expect(parseRomanNumeral("MMXXV")).toBe(2025);
+  expect(parseRomanNumeral("MMXXV")).toStrictEqual(2025);
 });
