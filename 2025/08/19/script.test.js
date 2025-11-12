@@ -7,21 +7,21 @@ const sumOfSquares = require("./script");
 //5. sumOfSquares(1000) should return 333833500.
 
 test("sumOfSquares 1", () => {
-  expect(sumOfSquares(5)).toBe(55);
+  expect(sumOfSquares(5)).toStrictEqual(55);
 });
 
 test("sumOfSquares 2", () => {
-  expect(sumOfSquares(10)).toBe(385);
+  expect(sumOfSquares(10)).toStrictEqual(385);
 });
 
 test("sumOfSquares 3", () => {
-  expect(sumOfSquares(25)).toBe(5525);
+  expect(sumOfSquares(25)).toStrictEqual(5525);
 });
 
 test("sumOfSquares 4", () => {
-  expect(sumOfSquares(500)).toBe(41791750);
+  expect(sumOfSquares(500)).toStrictEqual(41791750);
 });
 
 test("sumOfSquares 5", () => {
-  expect(sumOfSquares(1000)).toBe(333833500);
+  expect(sumOfSquares(1000)).toStrictEqual(333833500);
 });

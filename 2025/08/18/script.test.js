@@ -5,13 +5,13 @@ const factorial = require("./script");
 //3. factorial(20) should return 2432902008176640000.
 
 test("factorial 1", () => {
-  expect(factorial(0)).toBe(1);
+  expect(factorial(0)).toStrictEqual(1);
 });
 
 test("factorial 2", () => {
-  expect(factorial(5)).toBe(120);
+  expect(factorial(5)).toStrictEqual(120);
 });
 
 test("factorial 3", () => {
-  expect(factorial(20)).toBe(2432902008176640000);
+  expect(factorial(20)).toStrictEqual(2432902008176640000);
 });

@@ -8,25 +8,25 @@ const areAnagrams = require("./script");
 //6. areAnagrams("cat", "dog") should return false.
 
 test("areAnagrams 1", () => {
-  expect(areAnagrams("listen", "silent")).toBe(true);
+  expect(areAnagrams("listen", "silent")).toStrictEqual(true);
 });
 
 test("areAnagrams 2", () => {
-  expect(areAnagrams("School master", "The classroom")).toBe(true);
+  expect(areAnagrams("School master", "The classroom")).toStrictEqual(true);
 });
 
 test("areAnagrams 3", () => {
-  expect(areAnagrams("A gentleman", "Elegant man")).toBe(true);
+  expect(areAnagrams("A gentleman", "Elegant man")).toStrictEqual(true);
 });
 
 test("areAnagrams 4", () => {
-  expect(areAnagrams("Hello", "World")).toBe(false);
+  expect(areAnagrams("Hello", "World")).toStrictEqual(false);
 });
 
 test("areAnagrams 5", () => {
-  expect(areAnagrams("apple", "banana")).toBe(false);
+  expect(areAnagrams("apple", "banana")).toStrictEqual(false);
 });
 
 test("areAnagrams 6", () => {
-  expect(areAnagrams("cat", "dog")).toBe(false);
+  expect(areAnagrams("cat", "dog")).toStrictEqual(false);
 });
