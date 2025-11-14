@@ -9,11 +9,11 @@ const generateHex = require("./script");
 //7. Calling generateHex("blue") twice should return two different hex color values where blue is dominant.
 
 test("generateHex 1", () => {
-  expect(generateHex("yellow")).toBe("Invalid color");
+  expect(generateHex("yellow")).toStrictEqual("Invalid color");
 });
 
 test("generateHex 2", () => {
-  expect(generateHex("red").length).toBe(6);
+  expect(generateHex("red").length).toStrictEqual(6);
 });
 
 test("generateHex 3", () => {
@@ -35,7 +35,7 @@ test("generateHex 5", () => {
   const hex1 = generateHex("red");
   const hex2 = generateHex("red");
 
-  expect(hex1).not.toBe(hex2);
+  expect(hex1).not.toStrictEqual(hex2);
 
   const [r1, g1, b1] = [
     hex1.slice(0, 2),
@@ -58,7 +58,7 @@ test("generateHex 6", () => {
   const hex1 = generateHex("green");
   const hex2 = generateHex("green");
 
-  expect(hex1).not.toBe(hex2);
+  expect(hex1).not.toStrictEqual(hex2);
 
   const [r1, g1, b1] = [
     hex1.slice(0, 2),
@@ -81,7 +81,7 @@ test("generateHex 7", () => {
   const hex1 = generateHex("blue");
   const hex2 = generateHex("blue");
 
-  expect(hex1).not.toBe(hex2);
+  expect(hex1).not.toStrictEqual(hex2);
 
   const [r1, g1, b1] = [
     hex1.slice(0, 2),

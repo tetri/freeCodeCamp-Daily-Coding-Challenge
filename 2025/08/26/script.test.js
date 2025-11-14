@@ -5,13 +5,15 @@ const decode = require("./script");
 //3. decode("f(Ce(re))o((e(aC)m)d)p") should return "freeCodeCamp".
 
 test("decode 1", () => {
-  expect(decode("(f(b(dc)e)a)")).toBe("abcdef");
+  expect(decode("(f(b(dc)e)a)")).toStrictEqual("abcdef");
 });
 
 test("decode 2", () => {
-  expect(decode("((is?)(a(t d)h)e(n y( uo)r)aC)")).toBe("Can you read this?");
+  expect(decode("((is?)(a(t d)h)e(n y( uo)r)aC)")).toStrictEqual(
+    "Can you read this?"
+  );
 });
 
 test("decode 3", () => {
-  expect(decode("f(Ce(re))o((e(aC)m)d)p")).toBe("freeCodeCamp");
+  expect(decode("f(Ce(re))o((e(aC)m)d)p")).toStrictEqual("freeCodeCamp");
 });
