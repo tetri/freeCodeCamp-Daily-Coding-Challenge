@@ -3,8 +3,6 @@ function isValidIPv4(ipv4) {
 
   if (parts.length != 4) return false;
 
-  console.log(parts);
-
   for (let i = 0; i < parts.length; i++) if (!validPart(parts[i])) return false;
 
   return true;
