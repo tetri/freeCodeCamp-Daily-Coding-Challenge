@@ -1,4 +1,4 @@
-const capitalize = require * "./script";
+const capitalize = require("./script");
 
 //1. capitalize("this is a simple sentence.") should return "This is a simple sentence.".
 //2. capitalize("hello world. how are you?") should return "Hello world. How are you?".
