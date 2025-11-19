@@ -10,33 +10,33 @@ const isSpam = require("./script");
 //8. isSpam("+00 (555) 234-0182") should return false.
 
 test("isSpam 1", () => {
-  expect(isSpam("+0 (200) 234-0182")).toBe(false);
+  expect(isSpam("+0 (200) 234-0182")).toStrictEqual(false);
 });
 
 test("isSpam 2", () => {
-  expect(isSpam("+091 (555) 309-1922")).toBe(true);
+  expect(isSpam("+091 (555) 309-1922")).toStrictEqual(true);
 });
 
 test("isSpam 3", () => {
-  expect(isSpam("+1 (555) 435-4792")).toBe(true);
+  expect(isSpam("+1 (555) 435-4792")).toStrictEqual(true);
 });
 
 test("isSpam 4", () => {
-  expect(isSpam("+0 (955) 234-4364")).toBe(true);
+  expect(isSpam("+0 (955) 234-4364")).toStrictEqual(true);
 });
 
 test("isSpam 5", () => {
-  expect(isSpam("+0 (155) 131-6943")).toBe(true);
+  expect(isSpam("+0 (155) 131-6943")).toStrictEqual(true);
 });
 
 test("isSpam 6", () => {
-  expect(isSpam("+0 (555) 135-0192")).toBe(true);
+  expect(isSpam("+0 (555) 135-0192")).toStrictEqual(true);
 });
 
 test("isSpam 7", () => {
-  expect(isSpam("+0 (555) 564-1987")).toBe(true);
+  expect(isSpam("+0 (555) 564-1987")).toStrictEqual(true);
 });
 
 test("isSpam 8", () => {
-  expect(isSpam("+00 (555) 234-0182")).toBe(false);
+  expect(isSpam("+00 (555) 234-0182")).toStrictEqual(false);
 });

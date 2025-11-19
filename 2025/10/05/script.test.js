@@ -8,25 +8,25 @@ const hasExoplanet = require("./script");
 //6. hasExoplanet("ZXXWYZXYWYXZEGZXWYZXYGEE") should return true.
 
 test("hasExoplanet 1", () => {
-  expect(hasExoplanet("665544554")).toBe(false);
+  expect(hasExoplanet("665544554")).toStrictEqual(false);
 });
 
 test("hasExoplanet 2", () => {
-  expect(hasExoplanet("FGFFCFFGG")).toBe(true);
+  expect(hasExoplanet("FGFFCFFGG")).toStrictEqual(true);
 });
 
 test("hasExoplanet 3", () => {
-  expect(hasExoplanet("MONOPLONOMONPLNOMPNOMP")).toBe(false);
+  expect(hasExoplanet("MONOPLONOMONPLNOMPNOMP")).toStrictEqual(false);
 });
 
 test("hasExoplanet 4", () => {
-  expect(hasExoplanet("FREECODECAMP")).toBe(true);
+  expect(hasExoplanet("FREECODECAMP")).toStrictEqual(true);
 });
 
 test("hasExoplanet 5", () => {
-  expect(hasExoplanet("9AB98AB9BC98A")).toBe(false);
+  expect(hasExoplanet("9AB98AB9BC98A")).toStrictEqual(false);
 });
 
 test("hasExoplanet 6", () => {
-  expect(hasExoplanet("ZXXWYZXYWYXZEGZXWYZXYGEE")).toBe(true);
+  expect(hasExoplanet("ZXXWYZXYWYXZEGZXWYZXYGEE")).toStrictEqual(true);
 });
