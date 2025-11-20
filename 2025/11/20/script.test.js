@@ -8,25 +8,29 @@ const longestWord = require("./script");
 //6. longestWord("Wouldn't you like to know.") should return "Wouldnt".
 
 test("longestWord 1", () => {
-    expect(longestWord("The quick red fox")).toStrictEqual("quick");
+  expect(longestWord("The quick red fox")).toStrictEqual("quick");
 });
 
 test("longestWord 2", () => {
-    expect(longestWord("Hello coding challenge.")).toStrictEqual("challenge");
+  expect(longestWord("Hello coding challenge.")).toStrictEqual("challenge");
 });
 
 test("longestWord 3", () => {
-    expect(longestWord("Do Try This At Home.")).toStrictEqual("This");
+  expect(longestWord("Do Try This At Home.")).toStrictEqual("This");
 });
 
 test("longestWord 4", () => {
-    expect(longestWord("This sentence... has commas, ellipses, and an exlamation point!")).toStrictEqual("exlamation");
+  expect(
+    longestWord(
+      "This sentence... has commas, ellipses, and an exlamation point!"
+    )
+  ).toStrictEqual("exlamation");
 });
 
 test("longestWord 5", () => {
-    expect(longestWord("A tie? No way!")).toStrictEqual("tie");
+  expect(longestWord("A tie? No way!")).toStrictEqual("tie");
 });
 
 test("longestWord 6", () => {
-    expect(longestWord("Wouldn't you like to know.")).toStrictEqual("Wouldnt");
+  expect(longestWord("Wouldn't you like to know.")).toStrictEqual("Wouldnt");
 });
