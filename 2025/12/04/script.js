@@ -23,3 +23,10 @@ function fatorial(numero) {
 }
 
 module.exports = countPermutations;
+
+
+/*
+* Permutação sem repetições:
+* P = total! / repetições de caracteres!
+* "racecar" = 7! / 2! * 2! * 2! * 1!
+*/
