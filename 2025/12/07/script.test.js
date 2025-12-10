@@ -6,15 +6,15 @@ const compressString = require("./script");
 //4. compressString("route route route route route route tee tee tee tee tee tee") should return "route(6) tee(6)".
 
 test("compressString 1", () => {
-  expect(compressString("yes yes yes please")).toBe("yes(3) please");
+  expect(compressString("yes yes yes please")).toStrictEqual("yes(3) please");
 });
 
 test("compressString 2", () => {
-  expect(compressString("I have have have apples")).toBe("I have(3) apples");
+  expect(compressString("I have have have apples")).toStrictEqual("I have(3) apples");
 });
 
 test("compressString 3", () => {
-  expect(compressString("one one three and to the the the the")).toBe(
+  expect(compressString("one one three and to the the the the")).toStrictEqual(
     "one(2) three and to the(4)"
   );
 });
@@ -24,5 +24,5 @@ test("compressString 4", () => {
     compressString(
       "route route route route route route tee tee tee tee tee tee"
     )
-  ).toBe("route(6) tee(6)");
+  ).toStrictEqual("route(6) tee(6)");
 });

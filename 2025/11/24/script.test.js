@@ -7,25 +7,25 @@ const isValidMessage = require("./script");
 //5. isValidMessage("The quick brown fox jumps over the lazy dog.", "TQBFJOTLDT") should return false.
 
 test("isValidMessage 1", () => {
-  expect(isValidMessage("hello world", "hw")).toBe(true);
+  expect(isValidMessage("hello world", "hw")).toStrictEqual(true);
 });
 
 test("isValidMessage 2", () => {
-  expect(isValidMessage("ALL CAPITAL LETTERS", "acl")).toBe(true);
+  expect(isValidMessage("ALL CAPITAL LETTERS", "acl")).toStrictEqual(true);
 });
 
 test("isValidMessage 3", () => {
-  expect(isValidMessage("Coding challenge are boring.", "cca")).toBe(false);
+  expect(isValidMessage("Coding challenge are boring.", "cca")).toStrictEqual(false);
 });
 
 test("isValidMessage 4", () => {
   expect(
     isValidMessage("The quick brown fox jumps over the lazy dog.", "TQBFJOTLD")
-  ).toBe(true);
+  ).toStrictEqual(true);
 });
 
 test("isValidMessage 5", () => {
   expect(
     isValidMessage("The quick brown fox jumps over the lazy dog.", "TQBFJOTLDT")
-  ).toBe(false);
+  ).toStrictEqual(false);
 });

@@ -8,25 +8,25 @@ const formatDate = require("./script");
 //6. formatDate("February 29, 1992") should return "1992-02-29".
 
 test("formatDate 1", () => {
-  expect(formatDate("December 6, 2025")).toBe("2025-12-06");
+  expect(formatDate("December 6, 2025")).toStrictEqual("2025-12-06");
 });
 
 test("formatDate 2", () => {
-  expect(formatDate("January 1, 2000")).toBe("2000-01-01");
+  expect(formatDate("January 1, 2000")).toStrictEqual("2000-01-01");
 });
 
 test("formatDate 3", () => {
-  expect(formatDate("November 11, 1111")).toBe("1111-11-11");
+  expect(formatDate("November 11, 1111")).toStrictEqual("1111-11-11");
 });
 
 test("formatDate 4", () => {
-  expect(formatDate("September 7, 512")).toBe("512-09-07");
+  expect(formatDate("September 7, 512")).toStrictEqual("512-09-07");
 });
 
 test("formatDate 5", () => {
-  expect(formatDate("May 4, 1950")).toBe("1950-05-04");
+  expect(formatDate("May 4, 1950")).toStrictEqual("1950-05-04");
 });
 
 test("formatDate 6", () => {
-  expect(formatDate("February 29, 1992")).toBe("1992-02-29");
+  expect(formatDate("February 29, 1992")).toStrictEqual("1992-02-29");
 });

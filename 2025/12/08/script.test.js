@@ -7,21 +7,21 @@ const convertToKgs = require("./script");
 //5. convertToKgs(2.20462) should return "2.20462 pounds equals 1.00 kilogram.".
 
 test("convertToKgs 1", () => {
-  expect(convertToKgs(1)).toBe("1 pound equals 0.45 kilograms.");
+  expect(convertToKgs(1)).toStrictEqual("1 pound equals 0.45 kilograms.");
 });
 
 test("convertToKgs 2", () => {
-  expect(convertToKgs(0)).toBe("0 pounds equals 0.00 kilograms.");
+  expect(convertToKgs(0)).toStrictEqual("0 pounds equals 0.00 kilograms.");
 });
 
 test("convertToKgs 3", () => {
-  expect(convertToKgs(100)).toBe("100 pounds equals 45.36 kilograms.");
+  expect(convertToKgs(100)).toStrictEqual("100 pounds equals 45.36 kilograms.");
 });
 
 test("convertToKga 4", () => {
-  expect(convertToKgs(2.5)).toBe("2.5 pounds equals 1.13 kilograms.");
+  expect(convertToKgs(2.5)).toStrictEqual("2.5 pounds equals 1.13 kilograms.");
 });
 
 test("convertToKgs 5", () => {
-  expect(convertToKgs(2.20462)).toBe("2.20462 pounds equals 1.00 kilogram.");
+  expect(convertToKgs(2.20462)).toStrictEqual("2.20462 pounds equals 1.00 kilogram.");
 });
