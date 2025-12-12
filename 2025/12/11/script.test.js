@@ -7,18 +7,18 @@ const toRoman = require("./script");
 //5. toRoman(3999) should return "MMMCMXCIX".
 
 test("toRoman 1", () => {
-  expect(toRoman(18)).toBe("XVIII");
+  expect(toRoman(18)).toStrictEqual("XVIII");
 });
 
 test("toRoman 2", () => {
-  expect(toRoman(19)).toBe("XIX");
+  expect(toRoman(19)).toStrictEqual("XIX");
 });
 test("toRoman 3", () => {
-  expect(toRoman(1464)).toBe("MCDLXIV");
+  expect(toRoman(1464)).toStrictEqual("MCDLXIV");
 });
 test("toRoman 4", () => {
-  expect(toRoman(2025)).toBe("MMXXV");
+  expect(toRoman(2025)).toStrictEqual("MMXXV");
 });
 test("toRoman 5", () => {
-  expect(toRoman(3999)).toBe("MMMCMXCIX");
+  expect(toRoman(3999)).toStrictEqual("MMMCMXCIX");
 });

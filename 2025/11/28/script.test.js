@@ -8,20 +8,20 @@ const compare = require("./script");
 //6. compare("WIRELESS", "ETHERNET") should return "10021000".
 
 test("compare 1", () => {
-  expect(compare("APPLE", "POPPA")).toBe("10201");
+  expect(compare("APPLE", "POPPA")).toStrictEqual("10201");
 });
 test("compare 2", () => {
-  expect(compare("REACT", "TRACE")).toBe("11221");
+  expect(compare("REACT", "TRACE")).toStrictEqual("11221");
 });
 test("compare 3", () => {
-  expect(compare("DEBUGS", "PYTHON")).toBe("000000");
+  expect(compare("DEBUGS", "PYTHON")).toStrictEqual("000000");
 });
 test("compare 4", () => {
-  expect(compare("JAVASCRIPT", "TYPESCRIPT")).toBe("0000222222");
+  expect(compare("JAVASCRIPT", "TYPESCRIPT")).toStrictEqual("0000222222");
 });
 test("compare 5", () => {
-  expect(compare("ORANGE", "ROUNDS")).toBe("110200");
+  expect(compare("ORANGE", "ROUNDS")).toStrictEqual("110200");
 });
 test("compare 6", () => {
-  expect(compare("WIRELESS", "ETHERNET")).toBe("10021000");
+  expect(compare("WIRELESS", "ETHERNET")).toStrictEqual("10021000");
 });
